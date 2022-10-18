@@ -1,12 +1,13 @@
-studentHeights = input("Input a list of student heights: ").split(',')
+# 
 
-for n in range(0, len(studentHeights)):
-  studentHeights[n] = int(studentHeights[n])
+studentNumber = input("Enter the numbers of class test of the students: ").split(',')
 
-sum = 0
-for item in studentHeights:
-  sum += item
+for number in range(0, len(studentNumber)):
+  studentNumber[number] = int(studentNumber[number])
 
-average = int(sum / len(studentHeights))
-print(average)
+max = 0
+for eachNumber in studentNumber:
+  if max < eachNumber:
+    max = eachNumber
+print(max)
 
